@@ -6,8 +6,10 @@ const HotelByName = ({name}) => {
 
     return data ? (
         <div>  
-            <h2>{data.name}</h2>
-            <p>{data.location}</p>
+            <h2>Name: {data.name}</h2>
+            <p>Category: {data.category}</p>
+            <p>Location: {data.location}</p>
+            <p>Rating: {data.rating}</p>
         </div>
     ) : (
         loading && <p>Loading...</p>
