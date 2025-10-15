@@ -9,8 +9,7 @@ const Hotels = () => {
         <div>
             <ul>
                 {data?.map((hotel) => (
-                    <li>{hotel.name}</li>,
-                    <li>{hotel.location}</li>
+                    <li>{hotel.name}</li>
                 ))}
             </ul>
         </div>
