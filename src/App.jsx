@@ -5,6 +5,6 @@ import useFetch from "../useFetch";
 export default function App() {
   return (<main> 
     <Hotels />
-    <HotelByName name="The Grand Regal"/>
+    {/* <HotelByName name="The Grand Regal"/> */}
   </main>)
 }
