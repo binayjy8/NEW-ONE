@@ -28,7 +28,10 @@ const AddMovieForm = () => {
     return (
         <div>
             <h2>Add new movie</h2>
-            <form></form>
+            <form>
+                <label>Title:</label>
+                <br />
+            </form>
         </div>
     )
 }
