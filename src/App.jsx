@@ -7,5 +7,6 @@ export default function App() {
   return (<main> 
     <Hotels />
     <HotelByName name="The Grand Regal"/>
+    <AddMovieForm />
   </main>)
 }
