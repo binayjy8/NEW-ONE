@@ -10,7 +10,6 @@ const HotelByName = ({name}) => {
             <p>Category: {data.category}</p>
             <p>Location: {data.location}</p>
             <p>Rating: {data.rating}</p>
-            <p>PriceRange: {data.priceRange}</p>
         </div>
     ) : (
         loading && <p>Loading...</p>
