@@ -41,3 +41,5 @@ const AddMovieForm = () => {
         </div>
     )
 }
+
+export default AddMovieForm;
