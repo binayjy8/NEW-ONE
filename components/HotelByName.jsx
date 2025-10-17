@@ -6,7 +6,6 @@ const HotelByName = ({name}) => {
 
     return data ? (
         <div>  
-            <h2>All Hotels</h2>
             <h2>Name: {data.name}</h2>
             <p>Category: {data.category}</p>
             <p>Location: {data.location}</p>

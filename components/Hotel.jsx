@@ -7,6 +7,7 @@ const Hotels = () => {
 
     return (
         <div>
+            <h2>All Hotels</h2>
             <ul>
                 {data?.map((hotel) => (
                     <li>{hotel.name}</li>
