@@ -18,5 +18,17 @@ const AddMovieForm = () => {
 
     const handleChange = (e) => {
         const {name, value} = e.target;
-    }
+        setFormData((prevState) => ({
+            ...prevState, [name]: 
+                    name === "releaseYear" || name === "rating" ? parseInt(value): 
+                    value,
+        }));
+    };
+
+    return (
+        <div>
+            <h2>Add new movie</h2>
+            <form></form>
+        </div>
+    )
 }
