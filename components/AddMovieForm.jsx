@@ -47,6 +47,7 @@ const AddMovieForm = () => {
                     value={formData.releaseYear}
                     onChange={handleChange}
                 />
+                <br />
             </form>
         </div>
     )
