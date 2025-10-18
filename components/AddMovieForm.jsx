@@ -44,7 +44,7 @@ const AddMovieForm = () => {
                 <input 
                     type="number"
                     name="releaseYear"
-                    value={formData}
+                    value={formData.releaseYear}
                 />
             </form>
         </div>
