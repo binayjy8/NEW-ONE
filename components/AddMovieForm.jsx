@@ -41,6 +41,7 @@ const AddMovieForm = () => {
                 <br />
                 <label>Release Year:</label>
                 <br />
+                <input />
             </form>
         </div>
     )
