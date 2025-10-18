@@ -53,7 +53,7 @@ const AddMovieForm = () => {
                 <br />
                 <input 
                     type="text"
-                    name="ge"
+                    name="gen"
                 />
             </form>
         </div>
