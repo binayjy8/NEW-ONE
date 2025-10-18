@@ -52,7 +52,7 @@ const AddMovieForm = () => {
                 <label>Genre:</label>
                 <br />
                 <input 
-                    type="t"
+                    type="te"
                 />
             </form>
         </div>
