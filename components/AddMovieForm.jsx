@@ -64,6 +64,7 @@ const AddMovieForm = () => {
                     type="text"
                     name="director"
                     value={formData.director}
+                    onChange={handleChange}
                 />
             </form>
         </div>
