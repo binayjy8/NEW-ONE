@@ -36,7 +36,7 @@ const AddHotelForm = () => {
                 {
                     method: "POST",
                     headers: {
-                        "Content-Type": "applicaton/json"
+                        "Content-Type": "application/json"
                     },
                     body: JSON.stringify(formData)
                 }
