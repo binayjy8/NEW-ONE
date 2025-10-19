@@ -228,7 +228,7 @@ const AddHotelForm = () => {
                     name="amenities"
                     value={formData.amenities.join(', ')} 
                     onChange={handleChange}
-                    placeholder="e.g., Gym, Laundry, Pet-Friendly"
+                    placeholder="Gym, Laundry, Pet-Friendly"
                 />
                 <br /><br />
 
