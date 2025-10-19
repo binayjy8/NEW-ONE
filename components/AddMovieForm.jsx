@@ -32,7 +32,7 @@ const AddHotelForm = () => {
     return (
         <div>
             <h2>Add new Hotel</h2>
-            <form>
+            <form onSubmit={handleSubmit}>
                 <label>Name:</label>
                 <br />
                 <input 
