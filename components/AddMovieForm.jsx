@@ -29,10 +29,10 @@ const AddHotelForm = () => {
         }));
     };
 
-    const handleSubmit = (event) => {
+    const handleSubmit = async (event) => {
         event.preventDefault()
         try{
-
+            const response = await fetch("https://hotel-6q8k.vercel.app/hotels")
         }catch(error){
             console.log(error)
         }
