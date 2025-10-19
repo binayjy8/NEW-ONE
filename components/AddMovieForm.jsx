@@ -61,7 +61,7 @@ const AddMovieForm = () => {
                 <br />
                 <label>Director</label>
                 <input 
-                    type=""
+                    type="text"
                 />
             </form>
         </div>
