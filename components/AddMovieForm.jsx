@@ -29,6 +29,15 @@ const AddHotelForm = () => {
         }));
     };
 
+    const handleSubmit = (event) => {
+        event.preventDefault()
+        try{
+
+        }catch(error){
+            console.log(error)
+        }
+    }
+
     return (
         <div>
             <h2>Add new Hotel</h2>
