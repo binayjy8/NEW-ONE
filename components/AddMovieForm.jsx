@@ -27,24 +27,24 @@ const AddMovieForm = () => {
 
     return (
         <div>
-            <h2>Add new movie</h2>
+            <h2>Add new Hotel</h2>
             <form>
-                <label>Title:</label>
+                <label>Name:</label>
                 <br />
                 <input 
                     type="text"
-                    name="title"
-                    value={formData.title}
+                    name="name"
+                    value={formData.name}
                     onChange={handleChange}
                 />{" "}
                 <br />
                 <br />
-                <label>Release Year:</label>
+                <label>Category</label>
                 <br />
                 <input 
-                    type="number"
-                    name="releaseYear"
-                    value={formData.releaseYear}
+                    type="text"
+                    name="category"
+                    value={formData.category}
                     onChange={handleChange}
                 />
                 <br />
