@@ -1,19 +1,23 @@
 import React, { useState } from "react"; 
 
-const AddMovieForm = () => {
+const AddHotelForm = () => {
     const [formData, setFormData] = useState({
-        title: "",
-        releaseYear: "",
-        genre: "",
-        director: "",
-        actors: "",
-        language: "",
-        country: "",
-        rating: "",
-        plot: "",
-        awards: "",
-        posterUrl: "",
-        trailerUrl: "",
+        name: "", 
+        category: "",
+        location: "",
+        rating: 0, 
+        website: "",
+        phoneNumber: "",
+        checkInTime: "",
+        checkOutTime: "",
+        amenities: [], 
+        priceRange: "",
+        reservationsNeeded: false,
+        isParkingAvailable: false,
+        isWifiAvailable: false,
+        isPoolAvailable: false,
+        isSpaAvailable: false,
+        isRestaurantAvailable: false,
     });
 
     const handleChange = (e) => {
@@ -71,4 +75,4 @@ const AddMovieForm = () => {
     )
 }
 
-export default AddMovieForm;
+export default AddHotelForm;
