@@ -10,7 +10,7 @@ const Hotels = () => {
             <h2>All Hotels</h2>
             <ul>
                 {data?.map((hotel) => (
-                    <li>{hotel.name}</li>
+                    <li key={hotel._id}>{hotel.name}</li>
                 ))}
             </ul>
         </div>
