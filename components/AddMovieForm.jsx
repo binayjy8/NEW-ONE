@@ -65,7 +65,7 @@ const AddHotelForm = () => {
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                />{" "}
+                />
                 <br />
                 <br />
                 <label>Category</label>
