@@ -49,12 +49,12 @@ const AddMovieForm = () => {
                 />
                 <br />
                 <br />
-                <label>Genre:</label>
+                <label>Location:</label>
                 <br />
                 <input 
                     type="text"
-                    name="genre"
-                    value={formData.genre}
+                    name="location"
+                    value={formData.location}
                     onChange={handleChange}
                 />
                 <br />
