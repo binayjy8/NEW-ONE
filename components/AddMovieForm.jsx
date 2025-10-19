@@ -57,6 +57,7 @@ const AddMovieForm = () => {
                     value={formData.genre}
                     onChange={handleChange}
                 />
+                <br />
             </form>
         </div>
     )
