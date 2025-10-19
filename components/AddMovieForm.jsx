@@ -24,7 +24,7 @@ const AddHotelForm = () => {
         const {name, value} = e.target;
         setFormData((prevState) => ({
             ...prevState, [name]: 
-                    name === "name" || name === "rating" ? parseInt(value): 
+                    name === "value" || name === "rating" ? parseInt(value): 
                     value,
         }));
     };
