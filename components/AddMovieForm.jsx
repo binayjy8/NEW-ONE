@@ -63,6 +63,7 @@ const AddMovieForm = () => {
                 <input 
                     type="text"
                     name="director"
+                    value={formData.director}
                 />
             </form>
         </div>
