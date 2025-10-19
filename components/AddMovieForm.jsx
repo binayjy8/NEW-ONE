@@ -40,7 +40,11 @@ const AddHotelForm = () => {
                     },
                     body: JSON.stringify(formData)
                 }
-            )
+            );
+
+            if(!response.ok){
+                throw "Failed to add hotel";
+            }
         }catch(error){
             console.log(error)
         }
