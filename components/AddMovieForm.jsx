@@ -45,6 +45,10 @@ const AddHotelForm = () => {
             if(!response.ok){
                 throw "Failed to add hotel";
             }
+
+            const data = await response.json();
+
+            console.log("Added Hotel", data);
         }catch(error){
             console.log(error)
         }
