@@ -20,12 +20,19 @@ const AddHotelForm = () => {
         isRestaurantAvailable: false,
     });
 
-    const handleChange = (e) => {
-        const {name, value} = e.target;
+   const handleChange = (e) => {
+        const { name, value, type, checked } = e.target; 
+
         setFormData((prevState) => ({
-            ...prevState, [name]: 
-                    name === "value" || name === "rating" ? parseInt(value): 
-                    value,
+            ...prevState, 
+            [name]: 
+                type === "checkbox" ? checked :
+
+                name === "rating" ? (value === "" ? 0 : parseInt(value)) :
+                name === "amenities" 
+                    ? value.split(',').map(item => item.trim()).filter(item => item !== "")
+                    : 
+                value,
         }));
     };
 
