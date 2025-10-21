@@ -4,6 +4,13 @@ const Hotels = () => {
 
     const { data, loading, error } = useFetch("https://hotel-6q8k.vercel.app/hotels");
 
+    const handleDelete = async () => {
+        try{
+
+        }catch(error){
+            console.log(error);
+        }
+    }
 
     return (
         <div>
