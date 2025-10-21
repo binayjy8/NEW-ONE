@@ -6,7 +6,7 @@ const Hotels = () => {
 
     const handleDelete = async (hotelId) => {
         try{
-            const response = await fetch(`https://hotel-6q8k.vercel.app/hotels/${hotelId}`)
+            const response = await fetch(`https://hotel-6q8k.vercel.app/hotel/${hotelId}`)
         }catch(error){
             console.log(error);
         }
@@ -17,7 +17,10 @@ const Hotels = () => {
             <h2>All Hotels</h2>
             <ul>
                 {data?.map((hotel) => (
-                    <li key={hotel._id}>{hotel.name}</li>
+                    <li key={hotel._id}>
+                        {hotel.name}{" "}
+                        <button onClick={() => handleDelete(hotel._id)}>Delete</button>
+                        </li>
                 ))}
             </ul>
         </div>
