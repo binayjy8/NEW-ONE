@@ -19,6 +19,7 @@ const Hotels = () => {
             const data = await response.json();
             if (data) {
                 setSuccessMessag("Hotel deleted successfully");
+                window.location.reload();
             }
 
         }catch(error){
