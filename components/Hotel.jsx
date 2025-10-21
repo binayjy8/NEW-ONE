@@ -10,6 +10,16 @@ const Hotels = () => {
             const response = await fetch(`https://hotel-6q8k.vercel.app/hotel/${hotelId}`,
                 {method: "DELETE"},
             );
+
+            if(!response.ok){
+                throw "Failed to delete hotel.";
+            }
+
+            const data = await response.json();
+            if (data) {
+                setSuccessMessag("Hotel deleted successfully");
+            }
+
         }catch(error){
             console.log(error);
         }
@@ -26,6 +36,7 @@ const Hotels = () => {
                         </li>
                 ))}
             </ul>
+            <p>{successMessage}</p>
         </div>
     )
 };
