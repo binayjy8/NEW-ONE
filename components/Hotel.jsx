@@ -6,7 +6,9 @@ const Hotels = () => {
 
     const handleDelete = async (hotelId) => {
         try{
-            const response = await fetch(`https://hotel-6q8k.vercel.app/hotel/${hotelId}`)
+            const response = await fetch(`https://hotel-6q8k.vercel.app/hotel/${hotelId}`,
+                {method: "DELETE"},
+            );
         }catch(error){
             console.log(error);
         }
