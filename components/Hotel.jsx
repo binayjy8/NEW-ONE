@@ -1,5 +1,6 @@
-import useFetch from "../useFetch";
 import { useState } from "react";
+import useFetch from "../useFetch";
+
 
 const Hotels = () => {
     const [successMessage, setSuccessMessag] = useState("");
