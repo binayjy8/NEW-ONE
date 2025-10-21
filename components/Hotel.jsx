@@ -2,7 +2,7 @@ import useFetch from "../useFetch";
 import { useState } from "react";
 
 const Hotels = () => {
-
+    const [successMessage, setSuccessMessag] = useState("");
     const { data, loading, error } = useFetch("https://hotel-6q8k.vercel.app/hotels");
 
     const handleDelete = async (hotelId) => {
