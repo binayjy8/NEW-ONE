@@ -1,4 +1,5 @@
 import useFetch from "../useFetch";
+import { useState } from "react";
 
 const Hotels = () => {
 
